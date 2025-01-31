@@ -23,23 +23,22 @@
   font-weight: 700;
   font-style: normal;
 
-
-  @font-face {
-    font-family: 'Font-Mandrel'; /* Give your font a name */
-    src: url('path/to/your/font.otf') format('opentype'); /* Path to the .otf file */
-    font-weight: 500; /* or bold, 400, 700, etc. */
-    font-style: normal; /* or italic, oblique, etc. */
-  }
-
-
   
-
 /* colour */
 
   --colour-navy: color: #0a254b;
   --colour-dark: color: #02172b;
 
 }
+
+
+@font-face {
+  font-family: 'Font-Mandrel'; /* Give your font a name */
+  src: url('path/to/your/font.otf') format('opentype'); /* Path to the .otf file */
+  font-weight: 500; /* or bold, 400, 700, etc. */
+  font-style: normal; /* or italic, oblique, etc. */
+}
+
 
 
 
@@ -125,10 +124,10 @@ nav {
   display: none; /* Hide by default on larger screens */
   background: none;
   border: none;
-  font-size: 1.8rem; /* Make button bigger on mobile */
+  font-size: 1.46rem; /* Make button bigger on mobile */
   cursor: pointer;
   margin-left: auto;
-  margin-right: 3rem; /* Push button to the right */
+  margin-right: 3.22rem; /* Push button to the right */
 }
 
 
@@ -152,7 +151,7 @@ margin-left: 3rem; /* Limit width for better readability on large screens */
 
 
 .hero h3 {
-  font-size: 1.44rem;
+  font-size: 1.48rem;
   font-family: "Smooch Sans", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -167,7 +166,7 @@ margin-left: 3rem; /* Limit width for better readability on large screens */
 
 .hero h1 {
   font-size: 2.8rem;
-  font-family : Font-Mandrel;
+  font-family : Font-Mandrel , var(--font-ptserif) ;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -179,7 +178,7 @@ margin-left: 3rem; /* Limit width for better readability on large screens */
 
 .hero p {
   font-size: 1.2rem;
-  font-family: var(--font-varela);
+  font-family: var(--font-varela), var(--font-Libre);
   font-weight: 300;
   letter-spacing: 0.02rem;
   word-spacing: 0.16rem;
@@ -657,7 +656,7 @@ overflow: hidden; /*hides any content that overflows */
   }
   .hero-content {
       max-width: 100%; /* Content takes full width */
-      margin-top: 3rem; /* Add some space between image and content */
+      margin-top: 2rem; /* Add some space between image and content */
       margin-left: 0rem;
     }
 
@@ -665,7 +664,8 @@ overflow: hidden; /*hides any content that overflows */
       width: 44%;
       height: auto;
       margin: 0 auto 3rem; /* Center and add margin bottom */
-  }
+      margin-bottom: -1;
+    }
 
   nav .nav-links {
       display: none;  /* Hide navigation links by default */
@@ -676,8 +676,8 @@ overflow: hidden; /*hides any content that overflows */
       top: 70px;   /* Position below the nav bar */
       left: 0;     /* Cover entire width */
       background-color: #fff;
-      padding: 1rem 0;
-      border-bottom: 1px solid #ccc;
+      padding: 1.4rem 0;
+      border-bottom: 2px solid #ccc;
 
     }
 
@@ -689,7 +689,7 @@ overflow: hidden; /*hides any content that overflows */
 
     .nav-links li {
       margin: 1rem 0;
-      margin-right: 2rem;
+      margin-right: 3.6rem;
 
     }
 
@@ -720,7 +720,7 @@ overflow: hidden; /*hides any content that overflows */
   .image-placeholder {
     width: 44%;
     margin-top: 6rem;
-    margin-bottom: -2rem;
+    margin-bottom: 0rem;
   }
 
 
@@ -747,7 +747,7 @@ overflow: hidden; /*hides any content that overflows */
   .image-placeholder {
     width: 50%;
     margin-top: 6rem;
-    margin-bottom: 0rem;
+    margin-bottom: -1rem;
   }
 
 
@@ -798,9 +798,8 @@ overflow: hidden; /*hides any content that overflows */
     margin-left: -0.6rem;
   }
 
-
   .hero h3 {
-
+  font-size: 1rem;
   margin-top: 0rem;
   margin-bottom: 0rem
   }
@@ -811,11 +810,10 @@ overflow: hidden; /*hides any content that overflows */
       margin-bottom: 2.2rem;
   }
 
-
   .image-placeholder {
-      width: 100%; /* Image takes up full width */
-      margin-top: 6rem;
-      margin-bottom: 0rem;
+      width: 80%; /* Image takes up full width */
+      margin-top: 4.4rem;
+      margin-bottom: -1.6rem;
   }
 
 

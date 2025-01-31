@@ -11,17 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script> <!-- Add this line to include the JavaScript file -->
-    
+    <script src="script.js"></script>
 </head>
-</body>
-
 <body>
-
     <nav>
         <div class="logo">Inderjit Singh</div>
         <button class="menu-button" aria-label="Toggle Menu" aria-expanded="false" onclick="toggleMenu()">
-          <span class="menu-icon" aria-hidden="true">☰</span>
+          <span class="menu-icon" id="menu-icon">☰</span>
         </button>
         <ul class="nav-links">
             <li><a href="#">Projects</a></li>
@@ -36,17 +32,17 @@
         <div class="hero-content">
             <h3>___<br>Marketing Executive</h3>
             <h1>Your Growth is My Mission!</h1>
-            <p>I Create Marketing Campaigns That Sells, Not Just Tells! Help Businesses Scale with Perfect Marketing strategies that generate Leads and Revenue. </p>
-            <a href="#" class="contact-button">Contact Me &nbsp; →</a> </div>
+            <p>I Create Marketing Campaigns That Sell, Not Just Tell! Helping Businesses Scale with Perfect Marketing Strategies that Generate Leads and Revenue.</p>
+            <a href="#" class="contact-button">Contact Me &nbsp; →</a>
+        </div>
         <div class="image-placeholder">
             <img src="hero.png" alt="Inderjit Singh Logo Img">
         </div>
     </section>
 
-
     <section class="specialization">
         <div class="section-heading">
-            <h2>I Specialized In</h2>
+            <h2>I Specialize In</h2>
         </div>
         <div class="grid-container">
             <div class="grid-item">
@@ -55,7 +51,7 @@
                        <h3>Digital Marketing</h3>
                        <div class="line"></div>
                        <p>Driving growth through targeted online strategies.</p>
-                       <a id="Readmore" herf="#">Read more ↗</a>
+                       <a id="Readmore" href="#">Read more ....</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +61,7 @@
                        <h3>Campaign Management</h3>
                        <div class="line"></div>
                        <p>Executing successful marketing campaigns from start to finish.</p>
-                       <a id="Readmore" herf="#">Read more ↗</a>
+                       <a id="Readmore" href="#">Read more ....</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +71,7 @@
                        <h3>Brand Management</h3>
                        <div class="line"></div>
                        <p>Building and maintaining strong brand identities.</p>
-                       <a id="Readmore" herf="#">Read more ↗</a>
+                       <a id="Readmore" href="#">Read more ....</a>
                     </div>
                 </div>
             </div>
@@ -84,8 +80,8 @@
                     <div class="inner-card">
                        <h3>Market Research</h3>
                        <div class="line"></div>
-                       <p>Building and maintaining strong brand identities.</p>
-                       <a id="Readmore" herf="#">Read more ↗</a>
+                       <p>Gathering insights to drive business strategies.</p>
+                       <a id="Readmore" href="#">Read more ....</a>
                     </div>
                 </div>
             </div>
@@ -94,29 +90,34 @@
                     <div class="inner-card">
                        <h3>Strategy Planning</h3>
                        <div class="line"></div>
-                       <p>Building and maintaining strong brand identities.</p>
-                       <a id="Readmore" herf="#">Read more ↗</a>
+                       <p>Crafting long-term business strategies for success.</p>
+                       <a id="Readmore" href="#">Read more ....</a>
                     </div>
                 </div>
             </div>
-             <!-- Add More Specialization Cards Here -->
-
         </div>
-        <a href="#" class="cta-button">See all specializations ↗</a>
+        <a href="#" class="cta-button">See all specializations </a>
     </section>
 
     <script>
         function toggleMenu() {
             const menu = document.querySelector('.nav-links');
             const menuButton = document.querySelector('.menu-button');
+            const menuIcon = document.getElementById('menu-icon');
             menu.classList.toggle('show-menu');
-            menuButton.setAttribute('aria-expanded', menu.class.contains('show-menu')); // for accessibility
-
+            menuButton.setAttribute('aria-expanded', menu.classList.contains('show-menu'));
+            
+            if (menu.classList.contains('show-menu')) {
+                menuIcon.textContent = '🗙';
+            } else {
+                menuIcon.textContent = '☰';
+            }
         }
+        
     </script>
-
 </body>
 </html>
+
 
 
 
